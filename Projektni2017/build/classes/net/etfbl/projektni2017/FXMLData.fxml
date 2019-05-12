@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.projektni2017.FXMLDataController">
+   <children>
+      <BorderPane prefHeight="444.0" prefWidth="750.0">
+         <center>
+            <TableView fx:id="tabela" prefHeight="366.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="colPocetak" prefWidth="85.0" text="Pocetak" />
+                <TableColumn fx:id="colKraj" prefWidth="79.0" text="Kraj" />
+                  <TableColumn fx:id="colNaziv" prefWidth="102.0" text="Naziv" />
+                  <TableColumn fx:id="colOpis" prefWidth="66.0" text="Opis" />
+                  <TableColumn fx:id="colOrganizator" prefWidth="119.0" text="Organizator" />
+                  <TableColumn fx:id="colUcesnici" prefWidth="140.0" text="Ucesnici" />
+              </columns>
+            </TableView>
+         </center>
+         <right>
+            <VBox alignment="CENTER" prefHeight="435.0" prefWidth="158.0" spacing="50.0">
+               <children>
+                  <Button fx:id="showButton" mnemonicParsing="false" text="Prikazi/Osvjezi" />
+                  <Button fx:id="newEventButton" mnemonicParsing="false" text="Kreiraj novi dogadjaj" />
+                  <Button fx:id="deleteButton" mnemonicParsing="false" text="Izbrisi dogadjaj" />
+                  <Button fx:id="marketingButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="125.0" text="Pokreni markentisku kampanju" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="downloadButton" mnemonicParsing="false" text="Preuzmi dogadjaje" />
+               </children>
+            </VBox>
+         </right>
+         <bottom>
+            <Pane prefHeight="58.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="greskaLab" layoutX="361.0" layoutY="21.0" />
+               </children></Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

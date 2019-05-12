@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.projektni2017.FXMLChangesController">
+   <children>
+      <ChoiceBox fx:id="akcija" layoutX="74.0" layoutY="33.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="vrsta" layoutX="386.0" layoutY="33.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="37.0" prefHeight="17.0" prefWidth="59.0" text="Akcija:" />
+      <Label layoutX="300.0" layoutY="37.0" prefHeight="17.0" prefWidth="86.0" text="Vrsta podatka" />
+      <Label fx:id="imeLab" layoutX="14.0" layoutY="84.0" prefHeight="17.0" prefWidth="59.0" text="Ime:" />
+      <Label fx:id="prezimeLab" layoutX="300.0" layoutY="84.0" prefHeight="17.0" prefWidth="86.0" text="Prezime:" />
+      <TextField fx:id="ime" layoutX="74.0" layoutY="80.0" />
+      <TextField fx:id="prezime" layoutX="387.0" layoutY="80.0" />
+      <TextField fx:id="email" layoutX="387.0" layoutY="120.0" />
+      <TextField fx:id="tel" layoutX="74.0" layoutY="120.0" />
+      <Label fx:id="eLab" layoutX="300.0" layoutY="124.0" prefHeight="17.0" prefWidth="86.0" text="E-mail" />
+      <Label fx:id="telLab" layoutX="14.0" layoutY="124.0" prefHeight="17.0" prefWidth="59.0" text="Telefon:" />
+      <Label fx:id="orgLab" layoutX="300.0" layoutY="166.0" prefHeight="17.0" prefWidth="86.0" text="Organizacija:" />
+      <TextField fx:id="org" layoutX="387.0" layoutY="162.0" />
+      <Label fx:id="opisLab" layoutX="14.0" layoutY="166.0" prefHeight="17.0" prefWidth="72.0" />
+      <Label fx:id="napomeneLab" layoutX="300.0" layoutY="204.0" prefHeight="17.0" prefWidth="86.0" text="Napomene:" />
+      <MenuButton fx:id="napomene" layoutX="387.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" />
+      <Button fx:id="addButton" layoutX="175.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Dodaj napomenu" />
+      <TextField fx:id="napomena" layoutX="14.0" layoutY="200.0" />
+      <Button fx:id="okButton" layoutX="231.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Izadji" />
+      <ChoiceBox fx:id="lista" layoutX="86.0" layoutY="162.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

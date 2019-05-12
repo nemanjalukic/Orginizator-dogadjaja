@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.projektni2017.FXMLNewEventController">
+   <children>
+      <ChoiceBox fx:id="vrstaChoice" layoutX="137.0" layoutY="35.0" prefWidth="150.0" />
+      <Label layoutX="25.0" layoutY="39.0" text="Vrsta dogadjaja:" />
+      <Label layoutX="25.0" layoutY="78.0" text="Naziv:" />
+      <TextField fx:id="naziv" layoutX="138.0" layoutY="74.0" />
+      <DatePicker fx:id="DateOd" layoutX="167.0" layoutY="118.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="25.0" layoutY="122.0" text="Datum odrzavanja - od:" />
+      <DatePicker fx:id="DateDo" layoutX="402.0" layoutY="118.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="370.0" layoutY="122.0" text="do:" />
+      <TextField fx:id="TimeOd" layoutX="167.0" layoutY="168.0" promptText="hh:mm" />
+      <TextField fx:id="TimeDo" layoutX="403.0" layoutY="168.0" promptText="hh:mm" />
+      <Label layoutX="370.0" layoutY="172.0" text="do:" />
+      <Label layoutX="25.0" layoutY="172.0" text="Vrijeme odrzavanja - od:" />
+      <Label layoutX="27.0" layoutY="212.0" text="Opis:" />
+      <TextField fx:id="opis" layoutX="63.0" layoutY="208.0" prefHeight="25.0" prefWidth="489.0" />
+      <Label layoutX="312.0" layoutY="39.0" text="Organizator:" />
+      <ChoiceBox fx:id="organizatorChoice" layoutX="402.0" layoutY="35.0" prefWidth="150.0" />
+      <Label layoutX="314.0" layoutY="78.0" text="Ucesnici:" />
+      <Label fx:id="labKompanijaProizvod" layoutX="27.0" layoutY="258.0" text="Kompanija ili proizvod:" />
+      <TextField fx:id="kompanijaProizvod" layoutX="168.0" layoutY="254.0" />
+      <Label fx:id="labTema" layoutX="333.0" layoutY="258.0" text="Tema:" />
+      <TextField fx:id="tema" layoutX="403.0" layoutY="254.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label fx:id="labPredavac" layoutX="27.0" layoutY="297.0" text="Predavac:" />
+      <Label fx:id="labSadrzaj" layoutX="333.0" layoutY="297.0" text="Sadrzaj:" />
+      <TextField fx:id="sadrzaj" layoutX="403.0" layoutY="293.0" />
+      <Label fx:id="labIzvodjaci" layoutX="27.0" layoutY="333.0" text="Izvodjaci:" />
+      <Label fx:id="labTrajanje" layoutX="333.0" layoutY="333.0" text="Trajanje:" />
+      <MenuButton fx:id="ucesniciMenu" layoutX="404.0" layoutY="74.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" />
+      <MenuButton fx:id="izvodjaciMenu" layoutX="167.0" layoutY="329.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="trajanje" layoutX="403.0" layoutY="329.0" promptText="hh:mm" />
+      <MenuButton fx:id="autoriMenu" layoutX="167.0" layoutY="367.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" />
+      <Label fx:id="labAutori" layoutX="27.0" layoutY="371.0" text="Autori:" />
+      <ChoiceBox fx:id="predavacChoice" layoutX="167.0" layoutY="293.0" prefWidth="150.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="23.0" layoutY="416.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="43.0" prefWidth="529.0" spacing="60.0">
+         <children>
+            <Button fx:id="fajlButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Dodaj fajl" />
+            <Button fx:id="changeButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="183.0" text="Dodaj/Izbrisi/Izmijeni podatke" />
+            <Button fx:id="dodajButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" text="Dodaj dogadjaj u listu" />
+         </children>
+      </HBox>
+      <MenuButton fx:id="dogadjajiMenu" layoutX="404.0" layoutY="367.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" />
+      <Label fx:id="labDogadjaji" layoutX="333.0" layoutY="371.0" text="Dogadjaji:" />
+   </children>
+</AnchorPane>
